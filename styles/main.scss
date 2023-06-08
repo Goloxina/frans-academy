@@ -1,0 +1,60 @@
+@import '../styles/partial/fonts';
+@import '../styles/partial/color';
+@import '../styles/partial/globals';
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+
+.header {
+
+  background-color: cyan;
+
+  .container {
+
+  }
+
+}
+
+.hero {
+
+  .container {
+
+  
+
+  }
+
+  &__text {
+
+  }
+}
+
+
+.main {
+
+  .container {
+
+  }
+
+
+}
+
+.cards {
+
+  &__header {
+
+  }
+
+  &__row {
+
+  }
+}
+
