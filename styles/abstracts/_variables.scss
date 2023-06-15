@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Montserrat', 'Arial', sans-serif !default;
+
+
+/// Copy text color
+/// @type Color
+$text-color: rgb(34, 34, 34) !default;
+// primary colors
+$primary-black: #2b2c2d !default;
+$primary-white: #FFFFFF !default;
+$primary-red: #A00E2E !default;
+$primary-blue: #0D4292 !default;
+$primary-green: #27920d !default;
+$primary-orange: #ff9417 !default;
+$primary-yellow: #ffee11 !default;
+$primary-pink: #000000 !default;
+$primary-purple: #6d08a4 !default;
+
+// secondary colors
+$secondary-light-blue: #8ae1e7 !default;
+$secondary-dark-blue: #113675 !default;
+$secondary-light-green: #daffe2 !default;
+$secondary-dark-green: #185c1f !default;
+$secondary-dark-red: #5e0606 !default;
+$secondary-light-red: #ffb2b2 !default;
+$secondary-light-yellow: #fffab8 !default;
+$secondary-white: #FAFAFA !default;
+
+// error state in comments form
+$error-red: #D22D2D;
+
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1980px !default;
+$max-height: 1020px !default;
+
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'https://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

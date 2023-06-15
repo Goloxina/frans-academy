@@ -1,0 +1,200 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.header {
+  height: 60px;
+
+  background-color: cyan;
+
+  .container {
+    background-color: rgb(191, 196, 123);
+    height: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation {
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    background-color: orange;
+  }
+
+  .logo {
+    height: 100%;
+    background-color: antiquewhite;
+    
+    &__image {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .nav-list {
+    
+    ul {
+      display: flex;
+    }
+
+    //TODO 
+    /**
+      * style nav 
+        remove default styles from ul li elements
+        and style 
+
+
+        style toolbar
+
+
+      **/
+
+  }
+
+  .toolbar {
+    height: 100%;
+    width: 250px;
+    margin-right: 10px;
+    background-color: green;
+  }
+
+}
+
+
+
+.hero {
+  background-color: purple;
+  height: 300px;
+
+
+
+  &__text {
+    background-color: red;
+  }
+
+  &__image {
+    background-color: yellow;
+    height: 50px;
+  }
+
+
+  &__text {}
+}
+
+
+.main {
+  background-color: red;
+  height: calc(100% - 60px - 300px - 60px);
+
+  .section.cards {
+    background-color: blue;
+    height: 50px;
+
+    .h2.cards__header {
+      background-color: aquamarine;
+      height: 20px;
+    }
+
+    .cards__row {
+      background-color: yellowgreen;
+      height: 30px;
+    }
+  }
+
+}
+
+.footer {
+  background-color: beige;
+  height: 60px;
+
+  &__footer__top {
+    height: 20px;
+    background-color: red;
+
+    &__footer__hello {
+      height: 30px;
+      width: 40px;
+    }
+
+    &__footer__insta-news {
+      height: 30px;
+      width: 40px;
+    }
+  }
+
+  &__footer__bottom {
+    height: 15px;
+    background-color: blue;
+  }
+
+
+}
+
+
+
+
+// .header {
+
+//   background-color: cyan;
+
+//   .container {
+//     height: 60px;
+
+//     .navigation{
+//       height: 40px;
+//       margin-left: 10px;
+//       background-color: orange;
+//     }
+//     .toolbar{
+//       height: 20px;
+//       margin-right: 10px;
+//       background-color: green;
+//     }
+//   }
+// }
+
+
+
+
+// .cards {
+
+//   &__header {
+//     height: 30px;
+//     background-color: brown;
+
+//   }
+
+//   &__row {
+//     height: 15px;
+//     background-color: gold;
+//   }
+// }
+
+// .footer{
+//   background-color: beige;
+//   .container{
+//     background-color: silver;
+//     height: 80px;
+//     &__footer__top{
+//       height: 20px;
+//       background-color: red;
+//       &__footer__hello{
+//         height: 30px;
+//         width: 40px;
+//       }
+//       &__footer__insta-news{
+//         height: 30px;
+//         width: 40px;
+//       }
+//     }
+//     &__footer__bottom{
+//       height: 15px;
+//       background-color: blue;
+//     }
+//   }
+
+// }

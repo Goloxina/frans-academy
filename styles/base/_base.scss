@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+html {
+  box-sizing: border-box;
+}
+
+ body {
+  background-color: $primary-white;
+  height: 100%;
+  width: 100%;
+ }

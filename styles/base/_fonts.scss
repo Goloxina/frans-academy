@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+// IMPORT FONTS
+
+
+@font-face {
+  font-family: "Montserrat";
+  // src: url('../assets/fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+  src: local('Montserrat') url('../assets/fonts/montserrat/Montserrat-Bold.ttf') format("truetype");
+  font-style: bold;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  // src: url('../assets/fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+  src: local('Montserrat') url('../assets/fonts/montserrat/Montserrat-Medium.ttf') format("truetype");
+  font-style: medium;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  // src: url('../assets/fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+  src: local('Montserrat') url('../assets/fonts/montserrat/Montserrat-Regular.ttf') format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+
+
+// @font-face {
+//   font-family: oswald;
+//   src: url(../../assets/fonts/Oswald.zip);
+  
+// }
+// @font-face {
+//   font-family: caveat;
+//   src: url(../../assets/fonts/Caveat.zip);
+// }
