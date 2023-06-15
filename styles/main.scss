@@ -19,14 +19,33 @@ body {
   background-color: cyan;
 
   .container {
-
+    height: 60px;
+    
+    .navigation{
+      height: 40px;
+      margin-left: 10px;
+      background-color: orange;
+    }
+    .toolbar{
+      height: 20px;
+      margin-right: 10px;
+      background-color: green;
+    }
   }
-
 }
 
 .hero {
-
+  background-color: purple;
+  height: 60px;
   .container {
+    background-color: black;
+    .hero__text{
+      background-color: red;
+    }
+    .hero__image{
+      background-color: yellow;
+      height: 50px;
+    }
 
   
 
@@ -39,8 +58,22 @@ body {
 
 
 .main {
-
+background-color: red;
   .container {
+    background-color: pink;
+    height: 50px;
+    .section.cards{
+      background-color: blue;
+      height: 50px;
+      .h2.cards__header{
+        background-color: aquamarine;
+        height: 20px;
+      }
+      .cards__row{
+        background-color: yellowgreen;
+        height: 30px;
+      }
+    }
 
   }
 
@@ -50,11 +83,38 @@ body {
 .cards {
 
   &__header {
+    height: 30px;
+    background-color: brown;
 
   }
 
   &__row {
-
+    height: 15px;
+    background-color: gold;
   }
 }
 
+.footer{
+  background-color: beige;
+  .container{
+    background-color: silver;
+    height: 80px;
+    &__footer__top{
+      height: 20px;
+      background-color: red;
+      &__footer__hello{
+        height: 30px;
+        width: 40px;
+      }
+      &__footer__insta-news{
+        height: 30px;
+        width: 40px;
+      }
+    }
+    &__footer__bottom{
+      height: 15px;
+      background-color: blue;
+    }
+  }
+
+}
