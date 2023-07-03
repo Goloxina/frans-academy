@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -350,6 +351,16 @@ ol[role=list] {
   list-style: none;
 }
 
+/* set ul box-sizing to box */
+ul {
+  all: unset;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+  box-sizing: inherit;
+}
+
 /* Set core root defaults */
 html {
   width: 100%;
@@ -500,7 +511,7 @@ p, .p {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1980px; /* 1 */
+  max-width: 1280px; /* 1 */
   margin-left: auto; /* 2 */
   margin-right: auto; /* 2 */
   padding-left: 20px; /* 3 */
@@ -536,12 +547,20 @@ p, .p {
   width: 1px;
 }
 
+/**
+      * style nav 
+        remove default styles from ul li elements
+        and style 
+
+
+        style toolbar
+
+
+      **/
 .header {
   height: 60px;
-  background-color: cyan;
 }
 .header .container {
-  background-color: rgb(191, 196, 123);
   height: 100%;
 }
 .header__wrapper {
@@ -552,39 +571,68 @@ p, .p {
 }
 .header .navigation {
   display: flex;
+  align-items: center;
   width: -moz-fit-content;
   width: fit-content;
   height: 100%;
-  background-color: orange;
 }
 .header .logo {
-  height: 100%;
-  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .header .logo__image {
   width: 35px;
   height: 35px;
 }
 .header .nav-list {
-  /**
-    * style nav 
-      remove default styles from ul li elements
-      and style 
-
-
-      style toolbar
-
-
-    **/
-}
-.header .nav-list ul {
   display: flex;
+  /* Color de fondo del navbar */
+  gap: 8px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.header .nav-list__item {
+  display: flex;
+  /* Mostrar los elementos en línea */
+  justify-content: flex-start;
+}
+.header .nav-list__item a {
+  text-decoration: none;
+  /* Eliminar subrayado de los enlaces */
+  /* Color del texto del enlace */
+}
+.header .nav-list__item a:hover {
+  /* Color de fondo al pasar el cursor por encima del enlace */
 }
 .header .toolbar {
   height: 100%;
   width: 250px;
   margin-right: 10px;
   background-color: green;
+}
+
+.footer {
+  background-color: beige;
+  height: 60px;
+}
+.footer__footer__top {
+  height: 20px;
+  background-color: red;
+}
+.footer__footer__top__footer__hello {
+  height: 30px;
+  width: 40px;
+}
+.footer__footer__top__footer__insta-news {
+  height: 30px;
+  width: 40px;
+}
+.footer__footer__bottom {
+  height: 15px;
+  background-color: blue;
 }
 
 .hero {
@@ -613,25 +661,4 @@ p, .p {
 .main .section.cards .cards__row {
   background-color: yellowgreen;
   height: 30px;
-}
-
-.footer {
-  background-color: beige;
-  height: 60px;
-}
-.footer__footer__top {
-  height: 20px;
-  background-color: red;
-}
-.footer__footer__top__footer__hello {
-  height: 30px;
-  width: 40px;
-}
-.footer__footer__top__footer__insta-news {
-  height: 30px;
-  width: 40px;
-}
-.footer__footer__bottom {
-  height: 15px;
-  background-color: blue;
 }/*# sourceMappingURL=main.css.map */

@@ -30,6 +30,16 @@ ol[role='list'] {
   list-style: none;
 }
 
+/* set ul box-sizing to box */
+ul {
+  all: unset;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+  box-sizing: inherit
+}
+
 /* Set core root defaults */
 html {
   width:100%;

@@ -1,3 +1,29 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.footer {
+  background-color: beige;
+  height: 60px;
+
+  &__footer__top {
+    height: 20px;
+    background-color: red;
+
+    &__footer__hello {
+      height: 30px;
+      width: 40px;
+    }
+
+    &__footer__insta-news {
+      height: 30px;
+      width: 40px;
+    }
+  }
+
+  &__footer__bottom {
+    height: 15px;
+    background-color: blue;
+  }
+
+}

@@ -1,3 +1,102 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+
+
+//TODO 
+/**
+      * style nav 
+        remove default styles from ul li elements
+        and style 
+
+
+        style toolbar
+
+
+      **/
+
+
+.header {
+  height: 60px;
+
+  // background-color: cyan;
+
+  .container {
+    // background-color: rgb(191, 196, 123);
+    height: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    // background-color: orange;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    // background-color: antiquewhite;
+
+    &__image {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+
+  .nav-list {
+    display: flex;
+    // background-color: #2dcc18;
+    /* Color de fondo del navbar */
+    // padding: 10px; /* Espacio interno del navbar */
+    gap: 8px;
+    height: fit-content;
+
+
+    &__item {
+      display: flex;
+      /* Mostrar los elementos en línea */
+      justify-content: flex-start;
+      // margin-right: 10px; /* Espacio entre los elementos */
+    }
+
+    &__item a {
+      text-decoration: none;
+      /* Eliminar subrayado de los enlaces */
+      // color: #caf50a;
+      /* Color del texto del enlace */
+      // padding: 5px; /* Espacio interno del enlace */
+    }
+
+    &__item a:hover {
+      // background-color: #ddd;
+      /* Color de fondo al pasar el cursor por encima del enlace */
+    }
+
+
+  }
+
+
+
+
+
+  .toolbar {
+    height: 100%;
+    width: 250px;
+    margin-right: 10px;
+    background-color: green;
+  }
+
+}
