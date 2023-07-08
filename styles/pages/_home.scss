@@ -8,19 +8,52 @@
 
 // TODO place into a separate component
 .hero {
-  background-color: purple;
+  // background-color:rgba(237, 237, 237, 0.457);
   height: 300px;
 
+  .container {
+    height: 100%;
+  }
 
+  &__wrapper {
+    display:flex;
+    height: 100%;
+  }
+
+  // underscore __
 
   &__text {
-    background-color: red;
+    // background-color: rgb(123, 123, 123);
+    flex: 1 1 50%; //grow shrink size before the space is distributed 
+    position: relative;
+
+    .hero__heading, .hero__heading-text {
+      position: absolute;
+    }
+
+    .hero__heading {
+        top: 20%;
+        left: 30% // con estos parámetros ajusto la presentación del titulo y abajo la del texto
+    }
+
+    .hero__heading-text {
+        top: 40%;
+        left: 30%
+    }
+
   }
+  
+  // copy line: alt + shift + down 
 
   &__image {
-    background-color: yellow;
-    height: 50px;
+    flex: 1 1 50%; //grow shrink size before the space is distributed 
+    // background-color: yellow;
+    background-image: url('/assets/images/jonas-hoss-p0R8R5IS6aA-unsplash.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;   
+
   }
+
 
 
   &__text {}

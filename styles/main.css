@@ -593,6 +593,7 @@ p, .p {
   gap: 8px;
   height: -moz-fit-content;
   height: fit-content;
+  margin-left: 32px;
 }
 .header .nav-list__item {
   display: flex;
@@ -670,15 +671,35 @@ p, .p {
 }
 
 .hero {
-  background-color: purple;
   height: 300px;
 }
+.hero .container {
+  height: 100%;
+}
+.hero__wrapper {
+  display: flex;
+  height: 100%;
+}
 .hero__text {
-  background-color: red;
+  flex: 1 1 50%;
+  position: relative;
+}
+.hero__text .hero__heading, .hero__text .hero__heading-text {
+  position: absolute;
+}
+.hero__text .hero__heading {
+  top: 20%;
+  left: 30%;
+}
+.hero__text .hero__heading-text {
+  top: 40%;
+  left: 30%;
 }
 .hero__image {
-  background-color: yellow;
-  height: 50px;
+  flex: 1 1 50%;
+  background-image: url("/assets/images/jonas-hoss-p0R8R5IS6aA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .main {
   background-color: red;
