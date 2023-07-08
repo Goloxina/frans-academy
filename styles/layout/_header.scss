@@ -85,18 +85,56 @@
       /* Color de fondo al pasar el cursor por encima del enlace */
     }
 
-
   }
-
-
-
 
 
   .toolbar {
-    height: 100%;
-    width: 250px;
-    margin-right: 10px;
-    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: #f0f0f0;
+    // padding: 10px;
+    gap: 12px;
   }
 
+  .toolbar__login-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+
+  .toolbar__login-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+  }
+
+  .toolbar__basket-btn {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .toolbar__basket-btn img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .toolbar__basket-count {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    position: absolute; // no hay manera de que aparezca con el parametro absolute
+    bottom: -5px;
+    left: 25px;
+  }
+
+  .toolbar__login-img {
+    height: 50px;
+
+  }
 }
