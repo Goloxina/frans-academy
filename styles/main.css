@@ -733,21 +733,22 @@ p, .p {
 .hero__wrapper {
   display: flex;
   height: 100%;
+  gap: 10px;
 }
 .hero__text {
   flex: 1 1 50%;
   position: relative;
 }
-.hero__text .hero__heading, .hero__text .hero__heading-text {
-  position: absolute;
-}
 .hero__text .hero__heading {
-  top: 20%;
-  left: 5%;
+  margin-top: 60px;
+  margin-left: 30px;
 }
 .hero__text .hero__heading-text {
-  top: 40%;
-  left: 0%;
+  width: 80%;
+  margin-left: 40px;
+}
+.hero__text .hero__heading-text:first-of-type {
+  margin-top: 10px;
 }
 .hero__image {
   flex: 1 1 50%;
@@ -758,6 +759,9 @@ p, .p {
 .main {
   background-color: red;
   height: calc(100% - 60px - 300px - 60px);
+}
+.main .container {
+  height: 100%;
 }
 .main .section.cards {
   background-color: blue;
@@ -770,4 +774,20 @@ p, .p {
 .main .section.cards .cards__row {
   background-color: yellowgreen;
   height: 30px;
+}
+.main .cards {
+  height: 100%;
+}
+.main .cards__row {
+  display: flex;
+  justify-content: space-between;
+  overflow-y: auto;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.main .cards__card {
+  flex: 1;
+  max-width: 300px;
+  background-color: seagreen;
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */
