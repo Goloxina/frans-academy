@@ -615,8 +615,8 @@ p, .p {
   gap: 12px;
 }
 .header .toolbar__login-btn {
-  background-color: #007bff;
-  color: #fff;
+  background-color: black;
+  color: yellow;
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
@@ -633,20 +633,74 @@ p, .p {
   cursor: pointer;
 }
 .header .toolbar__basket-btn img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 .header .toolbar__basket-count {
-  background-color: #007bff;
-  color: #fff;
-  font-size: 12px;
+  color: midnightblue;
+  font-size: 14px;
   padding: 2px 6px;
   position: absolute;
   bottom: -5px;
-  left: 25px;
+  left: 45px;
 }
 .header .toolbar__login-img {
-  height: 50px;
+  height: 30px;
+}
+.header .language-selector {
+  position: relative;
+}
+.header .language-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+.header .language-selector__language-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+.header .language-selector__language-btn img {
+  width: 20px;
+  height: 20px;
+}
+.header .language-menu__item {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+.header .navigation-mobile {
+  display: none;
+}
+@media screen and (width <= 480px) {
+  .header .navigation {
+    display: none;
+  }
+  .header .toolbar {
+    display: none;
+  }
+  .header .navigation-mobile {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+  .header .navigation-mobile__burger {
+    border-radius: 50%;
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .footer {
@@ -689,11 +743,11 @@ p, .p {
 }
 .hero__text .hero__heading {
   top: 20%;
-  left: 30%;
+  left: 5%;
 }
 .hero__text .hero__heading-text {
   top: 40%;
-  left: 30%;
+  left: 0%;
 }
 .hero__image {
   flex: 1 1 50%;

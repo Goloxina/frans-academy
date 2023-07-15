@@ -99,8 +99,8 @@
   }
 
   .toolbar__login-btn {
-    background-color: #007bff;
-    color: #fff;
+    background-color: black;
+    color: yellow;
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -120,22 +120,103 @@
   }
 
   .toolbar__basket-btn img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    
+    // width: 50px;
+    // height: 50px;
   }
 
   .toolbar__basket-count {
-    background-color: #007bff;
-    color: #fff;
-    font-size: 12px;
+    //background-color: #007bff;
+    color: midnightblue;
+    font-size: 14px;
     padding: 2px 6px;
     position: absolute; // no hay manera de que aparezca con el parametro absolute
     bottom: -5px;
-    left: 25px;
+    left: 45px;
   }
 
   .toolbar__login-img {
-    height: 50px;
+    height: 30px;
 
   }
+
+  .language-selector {
+    position: relative;
+  }
+  
+  .language-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+  }
+
+  .language-selector__language-btn  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  .language-menu {
+
+    &__item {
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+    }
+  }
+
+  .navigation-mobile { 
+    display: none;
+  }
+
+  //mobile tablet
+  @media screen and (width <= 1025px) {
+
+  }
+
+  // mobile
+  @media screen and (width <= 480px) {
+
+    .navigation {
+      display: none;
+    }
+
+    .toolbar {
+      display: none;
+    }
+
+    .navigation-mobile {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 0;
+
+
+      &__burger {
+        border-radius: 50%;
+        background-color: blue;
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+  }
+  
 }
