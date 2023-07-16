@@ -757,7 +757,6 @@ p, .p {
   background-size: cover;
 }
 .main {
-  background-color: red;
   height: calc(100% - 60px - 300px - 60px);
 }
 .main .container {
@@ -778,16 +777,79 @@ p, .p {
 .main .cards {
   height: 100%;
 }
+.main .cards__shop-btn {
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  justify-items: center;
+  margin-left: 91%;
+  top: -32px;
+  background-color: transparent;
+  border: none;
+  color: blueviolet;
+}
+.main .cards__shop-btn:hover {
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  justify-items: center;
+  margin-left: 91%;
+  top: -32px;
+  background-color: transparent;
+  border: none;
+  color: #092ae6;
+}
+.main .cards__header {
+  margin-left: 20px;
+}
 .main .cards__row {
   display: flex;
   justify-content: space-between;
   overflow-y: auto;
   width: 100%;
   flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
 }
 .main .cards__card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex: 1;
   max-width: 300px;
-  background-color: seagreen;
   height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+.main .cards__card:hover {
+  flex: 1;
+  max-width: 300px;
+  height: 100%;
+  transform: translate(-10px, -10px);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+}
+.main .cards__card-hero {
+  background: linear-gradient(to right, #092ae6, #00ff00);
+  background-blend-mode: normal;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+  height: 144px;
+  padding: 24px;
+  background-image: url(/assets/images/login_verde.png);
+  background-position: right;
+  background-size: 150px;
+  background-repeat: no-repeat;
+}
+.main .cards__card-body {
+  background-color: goldenrod;
+  width: 100%;
+  height: 144px;
+  padding-top: 20px;
+  padding-left: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.main .cards__card-paragraph {
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=main.css.map */
