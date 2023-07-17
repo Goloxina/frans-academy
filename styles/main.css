@@ -739,23 +739,84 @@ p, .p {
 
 .footer {
   background-color: beige;
-  height: 60px;
+  width: 100%;
 }
-.footer__footer__top {
-  height: 20px;
-  background-color: red;
+.footer__container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.footer__footer__top__footer__hello {
-  height: 30px;
+.footer .footer__hello {
+  margin-bottom: 50px;
+}
+.footer .footer__hello .footer__hello {
+  margin-bottom: 50px;
+}
+.footer .footer__hello .footer__hello p {
+  margin-top: 15px;
+}
+.footer .footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer .footer__wrapper-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-items: left;
+}
+.footer .icon-link {
+  height: 40px;
   width: 40px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: inherit;
 }
-.footer__footer__top__footer__insta-news {
-  height: 30px;
-  width: 40px;
+.footer .icon-link__icon {
+  font-size: 24px;
 }
-.footer__footer__bottom {
-  height: 15px;
+.footer .footer__wrapper button.icon-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.footer .footer__wrapper button.icon-link:focus {
+  outline: none;
+}
+.footer .footer__insta-news {
+  height: 350px;
+  width: 100%;
+}
+.footer .reels1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 175px;
+}
+.footer .reels1__reel {
   background-color: blue;
+  margin-left: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+.footer .reels2 {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: orangered;
+  height: 175px;
+}
+.footer .reels2__reel {
+  background-color: blue;
+  margin-left: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
 }
 
 .hero {

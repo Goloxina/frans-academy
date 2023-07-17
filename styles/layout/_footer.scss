@@ -4,26 +4,100 @@
 
 .footer {
   background-color: beige;
-  height: 60px;
+  width: 100%;
 
-  &__footer__top {
-    height: 20px;
-    background-color: red;
+  &__container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    &__footer__hello {
-      height: 30px;
-      width: 40px;
-    }
+  .footer__hello {
+    margin-bottom: 50px;
 
-    &__footer__insta-news {
-      height: 30px;
-      width: 40px;
+    .footer__hello {
+      margin-bottom: 50px;
+  
+      p {
+        margin-top: 15px; //RENAT por que no se aplica?
+      }
     }
   }
 
-  &__footer__bottom {
-    height: 15px;
+  .footer__wrapper {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%
+  }
+  .footer__wrapper-wrapper {
+    display: flex;
+    align-items:flex-end;
+    justify-items: left;
+  }
+  
+  .icon-link {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .icon-link__icon {
+    font-size: 24px;
+  }
+  
+  .footer__wrapper button.icon-link {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .footer__wrapper button.icon-link:focus {
+    outline: none;
+  }
+  
+  .footer__insta-news {
+    height: 350px;
+    width: 100%;
+  }
+
+  .reels1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    //background-color: orangered;
+    height: 175px;
+  
+  
+  &__reel {
+    background-color: blue; //RENAT no esta bien el indicador
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    }
+  }
+  
+  .reels2 {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: orangered;
+    height: 175px;
+  
+  
+  &__reel {
     background-color: blue;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    }
   }
 
 }
