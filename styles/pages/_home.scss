@@ -113,6 +113,7 @@
     }
 
     &__header {
+      margin-top: 100px;
       margin-left: 20px;
     }
 
@@ -148,7 +149,8 @@
     }
 
     &__card-hero {
-      background: linear-gradient(to right, #092ae6, #00ff00);
+      //background-color: #092ae6;
+      background: linear-gradient(to right, #092ae6, #e34c07);
       background-blend-mode: normal; // RENAT se supone que esto evita que el gradiente se aplique a la imagen y se quede como color de fondo, pero hay algún problema
       border-top-right-radius: 15px;
       border-top-left-radius: 15px;
@@ -162,7 +164,7 @@
       }
 
     &__card-body {
-      background-color: goldenrod;
+      background-color: whitesmoke;
       width: 100%;
       height: 144px;
       padding-top: 20px;
