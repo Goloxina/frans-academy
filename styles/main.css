@@ -740,6 +740,7 @@ p, .p {
 .footer {
   background-color: beige;
   width: 100%;
+  height: 200px;
 }
 .footer__container {
   width: 100%;
@@ -799,8 +800,8 @@ p, .p {
 .footer .reels1__reel {
   background-color: blue;
   margin-left: 20px;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
 }
 .footer .reels2 {
@@ -814,9 +815,10 @@ p, .p {
 .footer .reels2__reel {
   background-color: blue;
   margin-left: 20px;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 .hero {
@@ -852,7 +854,7 @@ p, .p {
   background-size: cover;
 }
 .main {
-  height: calc(100% - 60px - 300px - 60px);
+  margin: 20px 0;
 }
 .main .container {
   height: 100%;
@@ -872,31 +874,22 @@ p, .p {
 .main .cards {
   height: 100%;
 }
+.main .cards__header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .cards__header {
+  margin-left: 20px;
+}
 .main .cards__shop-btn {
   font-size: 16px;
-  position: relative;
-  display: flex;
-  justify-items: center;
-  margin-left: 91%;
-  top: -32px;
   background-color: transparent;
   border: none;
   color: blueviolet;
 }
 .main .cards__shop-btn:hover {
-  font-size: 16px;
-  position: relative;
-  display: flex;
-  justify-items: center;
-  margin-left: 91%;
-  top: -32px;
-  background-color: transparent;
-  border: none;
   color: #092ae6;
-}
-.main .cards__header {
-  margin-top: 100px;
-  margin-left: 20px;
 }
 .main .cards__row {
   display: flex;
@@ -906,6 +899,7 @@ p, .p {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 20px;
+  padding: 10px 0 10px 10px;
 }
 .main .cards__card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -913,17 +907,16 @@ p, .p {
   max-width: 300px;
   height: 100%;
   border-radius: 15px;
-  overflow: hidden;
-  margin-left: 10px;
 }
 .main .cards__card:hover {
   flex: 1;
   max-width: 300px;
   height: 100%;
-  transform: translate(-10px, -10px);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+  transform: translate(-6px, -6px);
+  box-shadow: 0 5px 5px rgba(3, 2, 2, 0.22);
 }
 .main .cards__card-hero {
+  position: relative;
   background: linear-gradient(to right, #092ae6, #e34c07);
   background-blend-mode: normal;
   border-top-right-radius: 15px;
@@ -931,17 +924,21 @@ p, .p {
   width: 100%;
   height: 144px;
   padding: 24px;
-  background-image: url(/assets/images/login_verde.png);
-  background-position: right;
-  background-size: 150px;
-  background-repeat: no-repeat;
+}
+.main .cards__card-hero-header {
+  color: white;
+}
+.main .cards__card-hero-image {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  height: 80%;
 }
 .main .cards__card-body {
   background-color: whitesmoke;
   width: 100%;
   height: 144px;
-  padding-top: 20px;
-  padding-left: 10px;
+  padding: 16px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
