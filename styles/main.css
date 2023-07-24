@@ -615,19 +615,15 @@ p, .p {
   gap: 12px;
 }
 .header .toolbar__login-btn {
-  background-color: black;
-  color: yellow;
-  border: none;
   padding: 8px 16px;
   border-radius: 4px;
+  border: 2px ridge black;
+  text-align: center;
+  height: 40px;
 }
 .header .blyk-button {
   position: relative;
-  border: none;
-  background-color: black;
-  color: yellow;
-  padding: 8px 16px;
-  border-radius: 4px;
+  background-color: white;
   cursor: pointer;
   overflow: hidden;
 }
@@ -668,7 +664,7 @@ p, .p {
 }
 .header .toolbar__basket-btn img {
   width: 40px;
-  height: 40px;
+  height: 35px;
 }
 .header .toolbar__basket-count {
   color: midnightblue;
@@ -751,10 +747,23 @@ p, .p {
 .footer__top {
   display: flex;
   justify-content: space-around;
+  padding: 16px;
   height: 100%;
 }
 .footer__top-hello {
   flex: 1;
+}
+.footer__top-header {
+  margin-top: 16px;
+}
+.footer__top-paragraph:first-of-type {
+  margin-top: 8px;
+}
+.footer__top-social {
+  margin-top: 16px;
+}
+.footer__top-social-wrapper {
+  margin-top: 8px;
 }
 .footer__top-friends {
   flex: 1;
@@ -765,6 +774,7 @@ p, .p {
   grid-template-rows: 1fr 1fr;
   grid-auto-flow: row;
   gap: 8px;
+  margin-top: 16px;
 }
 .footer__top-news-pic {
   height: 160px;
@@ -790,6 +800,24 @@ p, .p {
 }
 .footer .footer__wrapper button.icon-link:focus {
   outline: none;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid lightgray;
+  padding: 8px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.button__text {
+  color: #2b2c2d;
+  font-size: 16px;
 }
 
 .hero {

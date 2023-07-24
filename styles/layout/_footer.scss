@@ -18,12 +18,34 @@
   &__top {
     display: flex;
     justify-content: space-around;
+    padding: 16px;
     height: 100%;
   }
 
   &__top-hello {
     flex: 1;
 
+  }
+
+  &__top-header {
+    margin-top: 16px;
+  }
+
+  &__top-paragraph {
+    
+    &:first-of-type {
+      margin-top: 8px;
+    }
+
+  }
+
+  &__top-social {
+    margin-top: 16px;
+  }
+
+  &__top-social-wrapper {
+    
+    margin-top: 8px;
   }
 
   &__top-friends {
@@ -37,6 +59,7 @@
     grid-template-rows: 1fr 1fr;
     grid-auto-flow: row;
     gap: 8px;
+    margin-top: 16px;
   } 
 
   &__top-news-pic {
@@ -69,5 +92,12 @@
     outline: none;
   }
 
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid lightgray                         ;
+    padding: 8px;
+  }
 
-}
+ }
+

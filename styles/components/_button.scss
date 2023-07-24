@@ -1,3 +1,16 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.button {
+  display:flex;
+  justify-content: center; // main axis
+  align-items: center; // cross axis
+
+  padding: 8px 16px;
+}
+
+.button__text {
+  color: $primary-black;
+  font-size: 16px;
+}
+
