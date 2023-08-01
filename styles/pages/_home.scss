@@ -3,12 +3,7 @@
 // -----------------------------------------------------------------------------
 
 // TODO place into a separate component
-
-
-
-// TODO place into a separate component
 .hero {
-  // background-color:rgba(237, 237, 237, 0.457);
   height: 300px;
 
   .container {
@@ -24,21 +19,15 @@
   // underscore __
 
   &__text {
-    flex: 1 1 50%; //grow shrink size before the space is distributed 
-    position: relative;
-
-    .hero__heading, .hero__heading-text {
-    }
-
+        flex: 1 1 50%; //grow shrink size before the space is distributed 
+        padding: 30px;
+    
     .hero__heading {
-        margin-top: 60px;
-        margin-left: 30px;
+
     }
 
     .hero__heading-text {
-
-        width: 80%;
-        margin-left: 40px;
+      margin-bottom: 8px;  // 16px normal text height
     }
 
     .hero__heading-text:first-of-type {
@@ -57,7 +46,6 @@
     background-size: cover;   
 
   }
-  &__text {}
 
 }
 
@@ -75,7 +63,7 @@
   .section.cards {
     background-color: blue;
     height: 50px;
-
+ 
     .h2.cards__header {
       background-color: aquamarine;
       height: 20px;

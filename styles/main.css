@@ -833,15 +833,10 @@ p, .p {
 }
 .hero__text {
   flex: 1 1 50%;
-  position: relative;
-}
-.hero__text .hero__heading {
-  margin-top: 60px;
-  margin-left: 30px;
+  padding: 30px;
 }
 .hero__text .hero__heading-text {
-  width: 80%;
-  margin-left: 40px;
+  margin-bottom: 8px;
 }
 .hero__text .hero__heading-text:first-of-type {
   margin-top: 10px;
@@ -852,6 +847,7 @@ p, .p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .main {
   margin: 20px 0;
 }
