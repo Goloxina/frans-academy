@@ -2,175 +2,25 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-// TODO place into a separate component
-.hero {
-  height: 300px;
+.home {
 
-  .container {
-    height: 100%;
-  }
-
-  &__wrapper {
-    display:flex;
-    height: 100%;
-    gap: 10px;
-  }
-
-  // underscore __
-
-  &__text {
-        flex: 1 1 50%; //grow shrink size before the space is distributed 
-        padding: 30px;
-    
-    .hero__heading {
-
-    }
-
-    .hero__heading-text {
-      margin-bottom: 8px;  // 16px normal text height
-    }
-
-    .hero__heading-text:first-of-type {
-      margin-top: 10px;
-    }
-
-  }
-  
-  // copy line: alt + shift + down 
-
-  &__image {
-    flex: 1 1 50%; //grow shrink size before the space is distributed 
-    // background-color: yellow;
-    background-image: url('/assets/images/jonas-hoss-p0R8R5IS6aA-unsplash.jpg');
-    background-repeat: no-repeat; 
-    background-size: cover;   
+  .cards__card-hero {
+    // background: red;
 
   }
 
 }
 
 
-.main {
- // background-color: red;
-  // height: calc(100% - 60px - 300px - 60px);
-  margin: 20px 0;
-  
+// file courses
 
-  .container {
-    height: 100%;
-  }
+// main class="main courses"
+// .courses {
 
-  .section.cards {
-    background-color: blue;
-    height: 50px;
- 
-    .h2.cards__header {
-      background-color: aquamarine;
-      height: 20px;
-    }
+// .cards__card-hero {
+//     background: silver;
 
-    .cards__row {
-      background-color: yellowgreen;
-      height: 30px;
-    }
-  }
+//   }
 
-  .cards {
-    height: 100%;
-    
-    &__header-wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;      
-    }
+// }
 
-
-    &__header {
-      // margin-top: 100px;
-      margin-left: 20px;    
-    }
-    
-    &__shop-btn {
-      font-size: 16px;
-      background-color: transparent;
-      border: none;
-      color: blueviolet;
-    }
-
-    &__shop-btn:hover { //RENAT por que al pasar el raton sobre la cesta es una mano y al pasar sobre esto es una flecha?
-      color:#092ae6
-    }
-
-
-    &__row {
-      display: flex;
-      justify-content: space-between;
-      overflow-y: auto;
-      width: 100%;
-      flex-wrap: wrap;
-      flex-direction: row;
-      gap: 20px;
-      padding: 10px 0 10px 10px; // hover translate effect
-    }
-
-    &__card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      flex: 1;
-      max-width: 300px;
-      height: 100%;   
-      border-radius: 15px;
-    }
-
-    &__card:hover { //subclase para cambiar el estilo al pasar el ratón por encima
-      flex: 1;
-      max-width: 300px;
-      height: 100%;   
-      transform: translate(-6px, -6px); //RENAT la primera tarjeta desaparece parcialmente al moverse
-      box-shadow: 0 5px 5px rgb(3 2 2 / 22%);
-    }
-
-    &__card-hero {
-      position: relative;
-
-      background: linear-gradient(to right, #092ae6, #e34c07);
-      background-blend-mode: normal; // RENAT se supone que esto evita que el gradiente se aplique a la imagen y se quede como color de fondo, pero hay algún problema
-      border-top-right-radius: 15px;
-      border-top-left-radius: 15px;
-      width: 100%;
-      height: 144px;
-      padding: 24px;      
-      }
-
-      &__card-hero-header {
-        color: white;
-      }
-
-      
-      &__card-hero-image {
-        position:absolute;
-        top: 10%;
-        right: 10%;
-        height: 80%;
-      }
-
-    &__card-body {
-      background-color: whitesmoke;
-      width: 100%;
-      height: 144px;
-      padding: 16px;
-      border-bottom-left-radius: 15px;
-      border-bottom-right-radius: 15px;
-    }
-
-
-
-    &__card-paragraph {
-      margin-top: 5px;
-      color: rgba(0, 0, 0, 0.5); //hace que las letras se vean medio transparentes
-    }
-
-    
-  }
-
-
-}

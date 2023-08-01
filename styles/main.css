@@ -808,6 +808,13 @@ p, .p {
   padding: 8px;
 }
 
+.main {
+  margin: 20px 0;
+}
+.main .container {
+  height: 100%;
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -848,45 +855,27 @@ p, .p {
   background-size: cover;
 }
 
-.main {
-  margin: 20px 0;
-}
-.main .container {
+.cards {
   height: 100%;
 }
-.main .section.cards {
-  background-color: blue;
-  height: 50px;
-}
-.main .section.cards .h2.cards__header {
-  background-color: aquamarine;
-  height: 20px;
-}
-.main .section.cards .cards__row {
-  background-color: yellowgreen;
-  height: 30px;
-}
-.main .cards {
-  height: 100%;
-}
-.main .cards__header-wrapper {
+.cards__header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main .cards__header {
+.cards__header {
   margin-left: 20px;
 }
-.main .cards__shop-btn {
+.cards__shop-btn {
   font-size: 16px;
   background-color: transparent;
   border: none;
   color: blueviolet;
 }
-.main .cards__shop-btn:hover {
+.cards__shop-btn:hover {
   color: #092ae6;
 }
-.main .cards__row {
+.cards__row {
   display: flex;
   justify-content: space-between;
   overflow-y: auto;
@@ -896,21 +885,21 @@ p, .p {
   gap: 20px;
   padding: 10px 0 10px 10px;
 }
-.main .cards__card {
+.cards__card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex: 1;
   max-width: 300px;
   height: 100%;
   border-radius: 15px;
 }
-.main .cards__card:hover {
+.cards__card:hover {
   flex: 1;
   max-width: 300px;
   height: 100%;
   transform: translate(-6px, -6px);
   box-shadow: 0 5px 5px rgba(3, 2, 2, 0.22);
 }
-.main .cards__card-hero {
+.cards__card-hero {
   position: relative;
   background: linear-gradient(to right, #092ae6, #e34c07);
   background-blend-mode: normal;
@@ -920,16 +909,16 @@ p, .p {
   height: 144px;
   padding: 24px;
 }
-.main .cards__card-hero-header {
+.cards__card-hero-header {
   color: white;
 }
-.main .cards__card-hero-image {
+.cards__card-hero-image {
   position: absolute;
   top: 10%;
   right: 10%;
   height: 80%;
 }
-.main .cards__card-body {
+.cards__card-body {
   background-color: whitesmoke;
   width: 100%;
   height: 144px;
@@ -937,7 +926,7 @@ p, .p {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.main .cards__card-paragraph {
+.cards__card-paragraph {
   margin-top: 5px;
   color: rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=main.css.map */

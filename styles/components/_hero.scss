@@ -1,0 +1,34 @@
+.hero {
+  height: 300px;
+
+  .container {
+    height: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    height: 100%;
+    gap: 10px;
+  }
+
+  &__text {
+    flex: 1 1 50%; //grow shrink size before the space is distributed 
+    padding: 30px;
+
+    .hero__heading-text {
+      margin-bottom: 8px; // 16px normal text height
+    }
+
+    .hero__heading-text:first-of-type {
+      margin-top: 10px;
+    }
+  }
+
+  &__image {
+    flex: 1 1 50%; //grow shrink size before the space is distributed 
+    background-image: url('/assets/images/jonas-hoss-p0R8R5IS6aA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}

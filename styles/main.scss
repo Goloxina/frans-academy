@@ -22,11 +22,14 @@
 @import
   'layout/header',
   'layout/footer',
+  'layout/main',
   'layout/layout';
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/hero',
+  'components/card';
 
 // 6. Page-specific styles
 @import
