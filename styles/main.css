@@ -928,4 +928,8 @@ p, .p {
 .cards__card-paragraph {
   margin-top: 5px;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.tutores .hero__image {
+  background-image: url("/assets/images/ej_tutor.jpg");
 }/*# sourceMappingURL=main.css.map */
