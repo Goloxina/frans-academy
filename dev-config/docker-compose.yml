@@ -22,7 +22,6 @@ services:
     image: strapi:latest
     ports:
       - "1337:1337"
-    env_file: .env
     environment:  
       APP_KEYS: ${APP_KEYS}
       API_TOKEN_SALT: ${API_TOKEN_SALT}
@@ -45,6 +44,7 @@ services:
       - ../cms/src:/usr/app/src
       - ../cms/package.json:/usr/app/package.json
       - ../cms/package-lock.json:/usr/app/package-lock.json
+      - ../cms/yarn.lock:/usr/app/yarn.lock
       - ../cms/public/uploads:/usr/app/public/uploads
     networks:
       - strapi
@@ -53,6 +53,7 @@ services:
 
   db:
     container_name: db
+    platform: linux/amd64 #
     image: postgres:14.1-alpine
     restart: always
     ports:
@@ -69,5 +70,8 @@ services:
 
 networks:
   strapi:
+    name: Strapi
+    driver: bridge
+
 volumes:
   db:
