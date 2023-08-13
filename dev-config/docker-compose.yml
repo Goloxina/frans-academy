@@ -1,0 +1,73 @@
+version: '3.8'
+
+services: 
+  frontend:
+    container_name: frontend
+    build:
+      context: ../frontend
+      dockerfile: ../dev-config/Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    volumes: 
+      - ../frontend:/usr/app
+    networks:
+      - strapi
+
+  cms:
+    container_name: strapi
+    restart: unless-stopped
+    build:
+      context: ../cms
+      dockerfile: ../dev-config/Dockerfile.cms
+    image: strapi:latest
+    ports:
+      - "1337:1337"
+    env_file: .env
+    environment:  
+      APP_KEYS: ${APP_KEYS}
+      API_TOKEN_SALT: ${API_TOKEN_SALT}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
+      JWT_SECRET: ${JWT_SECRET}
+      TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT}
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_USERNAME: ${DATABASE_USERNAME}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      DATABASE_HOST: db
+      DATABASE_CLIENT: postgres
+      DATABASE_PORT: 5432
+      DATABASE_SSL: "false"
+      NODE_ENV: ${NODE_ENV}
+      HOST: 0.0.0.0
+      PORT: 1337
+    volumes:
+      - ../cms:/usr/app
+      - ../cms/config:/usr/app/config
+      - ../cms/src:/usr/app/src
+      - ../cms/package.json:/usr/app/package.json
+      - ../cms/package-lock.json:/usr/app/package-lock.json
+      - ../cms/public/uploads:/usr/app/public/uploads
+    networks:
+      - strapi
+    depends_on:
+      - db
+
+  db:
+    container_name: db
+    image: postgres:14.1-alpine
+    restart: always
+    ports:
+      - '5432:5432'
+    env_file: .env
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+    volumes:
+      - db:/var/lib/postgresql/data/
+    networks:
+      - strapi
+
+networks:
+  strapi:
+volumes:
+  db:
