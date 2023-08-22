@@ -19,7 +19,7 @@
       color: blueviolet;
     }
 
-    &__shop-btn:hover { //RENAT por que al pasar el raton sobre la cesta es una mano y al pasar sobre esto es una flecha?
+    &__shop-btn:hover {
       color:#092ae6
     }
 
@@ -35,25 +35,22 @@
     }
 
     &__card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
       flex: 1;
       max-width: 300px;
       height: 100%;   
       border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    &__card:hover { //subclase para cambiar el estilo al pasar el ratón por encima
-      flex: 1;
-      max-width: 300px;
-      height: 100%;   
-      transform: translate(-6px, -6px); //RENAT la primera tarjeta desaparece parcialmente al moverse
+    &__card:hover { // subclase para cambiar el estilo al pasar el ratón por encima
+      transform: translate(-6px, -6px); 
       box-shadow: 0 5px 5px rgb(3 2 2 / 22%);
     }
 
     &__card-hero {
       position: relative;
       background: linear-gradient(to right, #092ae6, #e34c07);
-      background-blend-mode: normal; // RENAT se supone que esto evita que el gradiente se aplique a la imagen y se quede como color de fondo, pero hay algún problema
+      background-blend-mode: normal; 
       border-top-right-radius: 15px;
       border-top-left-radius: 15px;
       width: 100%;
