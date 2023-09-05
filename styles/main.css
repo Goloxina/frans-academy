@@ -971,25 +971,6 @@ span {
   gap: 20px;
   padding: 10px 0 10px 10px;
 }
-.tutors-page .tutors__card-hero {
-  position: relative;
-}
-.tutors-page .tutors__card-hero-price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  padding: 4px;
-  position: absolute;
-  right: 0;
-  top: 20px;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  background-color: #ffee11;
-}
-.tutors-page .tutors__card-hero-price span {
-  color: #113675;
-}
 .tutors-page .tutors__card {
   flex: 1;
   max-width: 350px;
@@ -1007,16 +988,26 @@ span {
   height: 300px;
   padding: 24px;
 }
-.tutors-page .tutors__card-hero-header {
-  color: white;
-}
-.tutors-page .tutors__card-hero-image {
+.tutors-page .tutors__card-hero-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 4px;
   position: absolute;
-  top: 10%;
-  right: 10%;
-  height: 80%;
+  right: 0;
+  top: 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #ffee11;
+}
+.tutors-page .tutors__card-hero-price span {
+  color: #113675;
 }
 .tutors-page .tutors__card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: whitesmoke;
   width: 100%;
   height: 180px;
@@ -1024,9 +1015,19 @@ span {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.tutors-page .tutors__card .tutors-page .tutors__card-paragraph {
-  margin-top: 5px;
-  color: rgba(0, 0, 0, 0.5);
+.tutors-page .tutors__card-body-rating-container {
+  display: flex;
+  justify-content: space-between;
+}
+.tutors-page .tutors__card-body-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tutors-page .tutors__card-body-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tutores .hero__image {
