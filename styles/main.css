@@ -1032,4 +1032,15 @@ span {
 
 .tutores .hero__image {
   background-image: url("/assets/images/ej_tutor.jpg");
+}
+
+.course {
+  display: flex;
+  align-content: center;
+}
+.course .course__hero-container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-around;
 }/*# sourceMappingURL=main.css.map */
